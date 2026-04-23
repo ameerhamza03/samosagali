@@ -54,4 +54,4 @@ def api_order():
     return jsonify({"status": "ok", "message": "Order received", "data": data})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
