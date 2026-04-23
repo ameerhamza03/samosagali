@@ -54,5 +54,4 @@ def api_order():
     return jsonify({"status": "ok", "message": "Order received", "data": data})
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
